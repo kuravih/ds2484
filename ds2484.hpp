@@ -117,6 +117,7 @@ public:
         if (onewire_reset() < 0)
             return;
         // write_device_config(DS2484_REG_CFG_1WS);
+        // write_device_config(DS2484_REG_CFG_APU);
         if (scan)
             scan_for_sensors();
     }
